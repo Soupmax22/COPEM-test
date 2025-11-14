@@ -6,27 +6,29 @@
 </head>
 <body>
 
-<div class="container">
+<div class="wrapper">
+    <div class="container">
 
-    <h1 class="title">COPEM Maths Test</h1>
+        <h1 class="title">COPEM Maths Test</h1>
 
-    <div id="setup">
-        <input id="username" class="input" placeholder="Enter your name">
+        <div id="setup">
+            <input id="username" class="input" placeholder="Enter your name">
 
-        <select id="level" class="input">
-            <option value="1">Level 1 – Basic Add/Sub</option>
-            <option value="2">Level 2 – Multiply/Divide</option>
-            <option value="3">Level 3 – Mixed CLIC</option>
-            <option value="4">Level 4 – Two Step</option>
-            <option value="5">Level 5 – Fractions</option>
-            <option value="6">Level 6 – Algebra</option>
-        </select>
+            <select id="level" class="input">
+                <option value="1">Level 1 – Add & Sub</option>
+                <option value="2">Level 2 – Multiply & Divide</option>
+                <option value="3">Level 3 – Mixed CLIC</option>
+                <option value="4">Level 4 – Two Step</option>
+                <option value="5">Level 5 – Fractions</option>
+                <option value="6">Level 6 – Algebra</option>
+            </select>
 
-        <button class="start-btn" onclick="startTest()">Start Test</button>
+            <button class="start-btn" onclick="startTest()">Start Test</button>
+        </div>
+
+        <div id="quiz" class="hidden"></div>
+
     </div>
-
-    <div id="quiz" class="quiz hidden"></div>
-
 </div>
 
 <script src="script.js"></script>
