@@ -1,2 +1,2 @@
 # COPEM-test
-The COPEM is a custom, live generated test of your math skills.
+The COPEM is a custom, live generated test of your math skills, from add+subtract, to basic algebra.
