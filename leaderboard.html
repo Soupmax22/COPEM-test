@@ -3,32 +3,22 @@
 <head>
     <title>COPEM Leaderboard</title>
     <style>
-        body { font-family: Arial; padding:20px; background:#eef; }
-        h1 { font-size:32px; }
-        li { font-size:22px; margin:6px 0; }
+        body{font-family:Arial;padding:20px;background:#eef;}
+        h1{font-size:32px;}
+        li{font-size:22px;margin:6px 0;}
+        button{padding:15px;font-size:20px;border:none;background:#3cd15c;color:white;border-radius:10px;margin-top:20px;}
     </style>
 </head>
 <body>
-
 <h1>Leaderboard</h1>
-
 <ul id="scores"></ul>
-
-<button onclick="location.href='index.html'" style="
-    padding:15px;font-size:20px;border:none;background:#3cd15c;
-    color:white;border-radius:10px;margin-top:20px;">Back</button>
+<button onclick="location.href='index.html'">Back</button>
 
 <script>
-    let data = JSON.parse(localStorage.getItem("copemScores") || "[]");
-    data.sort((a,b)=>b.score - a.score);
-
-    let ul = document.getElementById("scores");
-    data.forEach(s => {
-        let li = document.createElement("li");
-        li.textContent = `${s.name}: ${s.score}`;
-        ul.appendChild(li);
-    });
+let data=JSON.parse(localStorage.getItem("copemScores")||"[]");
+data.sort((a,b)=>b.score-a.score);
+let ul=document.getElementById("scores");
+data.forEach(s=>{let li=document.createElement("li");li.textContent=`${s.name}: ${s.score}`;ul.appendChild(li);});
 </script>
-
 </body>
 </html>
