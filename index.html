@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>COPEM Maths Test</title>
+    <title>COPEM Super Maths</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
 
-<div class="wrapper">
-    <div class="container">
+<div class="screen">
+    <div class="panel">
 
-        <h1 class="title">COPEM Maths Test</h1>
+        <h1 class="title">COPEM Super Maths</h1>
 
         <div id="setup">
-            <input id="username" class="input" placeholder="Enter your name">
+
+            <input id="username" class="input" placeholder="Your name">
 
             <select id="level" class="input">
-                <option value="1">Level 1 – Add & Sub</option>
-                <option value="2">Level 2 – Multiply & Divide</option>
-                <option value="3">Level 3 – Mixed CLIC</option>
-                <option value="4">Level 4 – Two Step</option>
-                <option value="5">Level 5 – Fractions</option>
-                <option value="6">Level 6 – Algebra</option>
+                <option value="clic17">CLIC 17</option>
+                <option value="clic18">CLIC 18</option>
+                <option value="clic19">CLIC 19</option>
+                <option value="clic20">CLIC 20</option>
+                <option value="clic21">CLIC 21</option>
+                <option value="clic22">CLIC 22</option>
+
+                <option value="safe14">SAFE 14</option>
+                <option value="safe15">SAFE 15</option>
+                <option value="safe16">SAFE 16</option>
+                <option value="safe17">SAFE 17</option>
+                <option value="safe18">SAFE 18</option>
+                <option value="safe19">SAFE 19</option>
+                <option value="safe20">SAFE 20</option>
+
+                <option value="mix">MIX — Big Maths style</option>
             </select>
 
-            <button class="start-btn" onclick="startTest()">Start Test</button>
+            <label class="speed-label">
+                <input type="checkbox" id="speedMode">
+                ⚡ Speed Mode (3 sec per question)
+            </label>
+
+            <button class="start-btn" onclick="startTest()">Start</button>
+            <button class="leader-btn" onclick="openLeaderboard()">Leaderboard</button>
         </div>
 
         <div id="quiz" class="hidden"></div>
