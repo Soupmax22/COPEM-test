@@ -1,76 +1,88 @@
 body {
-    background: #f0f5ff;
+    margin: 0;
+    padding: 0;
+    background: #eef3ff;
     font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    align-items: flex-start;
+    padding-top: 25px;
 }
 
 .container {
-    width: 90%;
-    max-width: 450px;
+    width: 95%;
+    max-width: 480px;
     background: white;
+    border-radius: 16px;
     padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 18px rgba(0,0,0,0.12);
     text-align: center;
 }
 
 .title {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: bold;
+    color: #333;
 }
 
 .input {
-    width: 90%;
-    padding: 12px;
+    width: 100%;
+    padding: 14px;
     margin: 10px 0;
     font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid #3467eb;
 }
 
 .start-btn {
-    background: #4CAF50;
-    padding: 12px 20px;
-    font-size: 18px;
+    width: 100%;
+    padding: 14px;
+    background: #32c259;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    font-size: 20px;
     cursor: pointer;
 }
-
 .start-btn:hover {
-    background: #45a049;
+    background: #28a94b;
 }
 
 .answer-btn {
     width: 100%;
-    padding: 15px;
+    padding: 18px;
     margin: 8px 0;
-    font-size: 20px;
-    border-radius: 8px;
-    cursor: pointer;
+    font-size: 22px;
+    border-radius: 12px;
     border: none;
-    background: #1976d2;
+    cursor: pointer;
     color: white;
+    background: #ff8a24;
+}
+.answer-btn:hover {
+    background: #ff7a00;
 }
 
-.answer-btn:hover {
-    background: #125ca5;
+.question-text {
+    background: #1e57d1;
+    color: white;
+    padding: 20px;
+    font-size: 26px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .hidden {
     display: none;
-}
-
-.question-text {
-    font-size: 26px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.progress {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #444;
 }
