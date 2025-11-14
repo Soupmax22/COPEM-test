@@ -4,6 +4,8 @@
     <title>COPEM Super Maths</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -13,7 +15,6 @@
         <h1 class="title">COPEM Super Maths</h1>
 
         <div id="setup">
-
             <input id="username" class="input" placeholder="Your name">
 
             <select id="level" class="input">
@@ -32,7 +33,7 @@
                 <option value="safe19">SAFE 19</option>
                 <option value="safe20">SAFE 20</option>
 
-                <option value="mix">MIX — Big Maths style</option>
+                <option value="mix">MIX</option>
             </select>
 
             <label class="speed-label">
@@ -40,11 +41,14 @@
                 ⚡ Speed Mode (3 sec per question)
             </label>
 
-            <button class="start-btn" onclick="startTest()">Start</button>
+            <button class="start-btn" onclick="startTest()">Start Quiz</button>
             <button class="leader-btn" onclick="openLeaderboard()">Leaderboard</button>
+            <button class="daily-btn" onclick="dailyChallenge()">Daily Challenge</button>
         </div>
 
         <div id="quiz" class="hidden"></div>
+
+        <div id="xp-display" class="xp-display">XP: 0 | Level: 1</div>
 
     </div>
 </div>
